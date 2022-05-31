@@ -71,16 +71,40 @@ body {
 .container {
     width: 100%;
     max-width: 1240px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-left: auto;
     margin-right: auto;
+}
+/* SITE SUBTITLE STYLES */
+.site-subtitle {
+    font-family: var(--franklin-font);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    color: var(--nine-color);
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+}
+/* BY SOMEBODY STYLES */
+.by-somebody {
+    font-family: var(--franklin-font);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+.by-somebody-by {
+    margin-right: 0.5rem;
 }
 
 
 /* SITE HEADER STYLES */
 .site-header {
-    padding: 30px 0;
+    padding: 3rem 0;
     border-bottom: 1px solid var(--line-color);
 }
 .site-header-container {
@@ -98,20 +122,90 @@ body {
     display: block;
 }
 .sitenav {
-    padding-right: 32px;
+    padding-right: 3.2rem;
 }
 .sitenav-list {
     display: flex;
     list-style: none;
 }
 .sitenav-item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 4rem;
 }
 .sitenav-link {
     font-family: var(--franklin-font);
-    font-size: 14px;
+    font-size: 1.4rem;
     color: var(--black-color);
     text-decoration: none;
     text-transform: capitalize;
 }
+
+
+
+/* SITE MAIN STYLES */
+.site-main {
+    flex-grow: 1;
+    padding: 6rem 0;
+}
+
+/* HERO SECTION STYLES */
+.hero-section {
+    display: flex;
+    margin-bottom: 3.5rem;
+}
+.hero-section-img-content {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7)40%, rgba(0,0,0,0.3)100%), url("../images/jpg/hero-img@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3rem;
+}
+.hero-section-img-content h1,
+.hero-section-img-content p,
+.hero-section-img-content h3,
+.hero-section-img-content span {
+    color: var(--white-color);
+}
+.hero-section-img {
+    width: 60%;
+    height: auto;
+    margin-right: 5.1rem;
+    object-fit: cover;
+}
+.hero-section-title {
+    font-family: var(--tenor-font);
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    color: var(--black-color);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2.7rem;
+}
+.hero-section-text {
+    max-width: 419px;
+    margin-bottom: 2.8rem;
+}
+
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    .hero-section-img-content {
+        display: flex;
+    }
+    .hero-section-text-wrapper {
+        display: none;
+    }
+    .hero-section-img {
+        display: none;
+    }
+}
+
 
